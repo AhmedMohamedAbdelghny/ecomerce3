@@ -7,7 +7,8 @@ import { AppError } from "../../utils/classError.js";
 import { nanoid, customAlphabet } from "nanoid";
 import cloudinary from '../../utils/cloudinary.js';
 import slugify from "slugify";
-import { ApiFeatures } from "../../utils/ApiFeatures.js";
+import { ApiFeatures } from './../../utils/apiFeatures.js';
+
 
 
 
