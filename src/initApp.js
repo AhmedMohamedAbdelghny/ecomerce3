@@ -16,6 +16,9 @@ export const initApp = (app, express) => {
     app.use(cors())
     app.use(express.json());
 
+    app.get("/", (req, res, next) => {
+        res.status(200).json({ msg: "welcome to ecommerce" })
+    })
 
     app.use("/users", routers.userRouter)
     app.use("/categories", routers.categoryRouter)
